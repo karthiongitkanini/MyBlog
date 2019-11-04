@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="BlogSylesheet.css" />
+
+    <!--fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>    <title></title>
+</head>
+<body>
+    <img id="idLogo" src="https://karthikk.net/images/kk_sig.svg" />
+
+    <header>
+    </header>
+    <div class="contentPage1">
+
+        <h1 id="idHeading1">RESPONSIVE WEB DESIGN</h1>
+        <hr />
+        <div id="idImgIntro">
+            <img id="idImgContent" style="max-width:100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Content-is-like-water.svg/800px-Content-is-like-water.svg.png" />
+        </div>
+        <div id="idTextIntro">
+            <p style="text-align:justify;">
+                <span id="idOfSpan"><i>T</i></span>he content and controls of the webpage or website is ultimate goal of any software development
+                what if the  content does not reach out to the end user properly.
+                The end user may be having any kind of device varying by the screen size. But in response
+                to the  content should be adapting. For the sole purpose of "Adapting content", W3C presents
+                few css tags which is very handy while designing.
+                <br /><br /><br /><br />
+            </p>
+        </div>
+        <br />    <br />
+        <div id="pFont">
+            <p>
+                <br />
+                <h3>What is Responsive Web Design?</h3>
+                Responsive Web Design is about using HTML and CSS to automatically resize,
+                hide, shrink, or enlarge, a website, to make it look good on all devices
+                (desktops, tablets, and phones):
+
+                <h3>Setting the Viewport</h3>
+                When making responsive web pages,the meta elementis used in all web pages <br />
+                <xmp>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+                </xmp>
+                <img id="idImage" src="https://www.w3schools.com/css/img_temp_band.jpg" /><br /><br />
+
+                This will set the viewport of your page, which will give the browser instructions on how to control the page's
+                dimensions and scaling.<br /><br /><br />
+
+                Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:
+                <br />
+                <br />
+                <img id="idImage" style="max-width:100%" src="Capture.png" />
+                <h3>Responsive Images</h3>
+                Responsive images are images that scale nicely to fit any browser size.<br />
+
+                <h3>Using the width Property</h3>
+                If the CSS width property is set to 100%, the image will be responsive and scale up and down:
+                <xmp>
+                    <img src="img_girl.jpg" style="width:100%;">
+                </xmp>
+                <h3>Using the max-width Property</h3>
+                If the max-width property is set to 100%, the image will scale down if it has to,
+                but never scale up to be larger than its original size:
+                <xmp>
+                    <img src="img_girl.jpg" id="idImage" ;height:auto;">
+                </xmp>
+
+                <h3>  Responsive Text Size</h3>
+                The text size can be set with a "vw" unit, which means the "viewport width".
+                That way the text size will follow the size of the browser window:
+                <xmp>
+                    <h1 style="font-size:10vw">Hello World</h1>
+                </xmp>
+                <section style="border-style: solid;border-width: 1px;padding:20px 0px 0px 9px;max-width:100%;max-height:100%; height:4%; color:black;opacity:1;">
+                    Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm
+                </section>
+                <br /><br />
+                <h3>  Media Queries</h3>
+                In addition to resize text and images, it is also common to use media queries in responsive web pages.
+                With media queries you can define completely different styles for different browser sizes.<br /><br />
+                <br />
+                <b>EXAMPLE CODE IMPLEMENTING MEDIA QUERIES:</b>
+                <br />
+                <xmp>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <style>
+                        .left, .right {
+                            float: left;
+                            width: 20%; /* The width is 20%, by default */
+                        }
+
+                        .main {
+                            float: left;
+                            width: 60%; /* The width is 60%, by default */
+                        }
+
+                        /* Use a media query to add a breakpoint at 800px: */
+                        @media screen and (max-width: 800px) {
+                            .left, .main, .right {
+                                width: 100%;
+                                /* The width is 100%,
+                            when the viewport is 800px or smaller */
+                            }
+                        }
+                    </style>
+                </xmp>
+                <br />
+                <b>THE DESIRED DESIGN:</b><br /><br />
+                <img id="idImage" src="Capture1.png" /><br /><br />
+                <b>THE RESPONSIVE STATE OF THE DESIGN:</b><br /><br />
+                <img id="idImage" src="Capture3.png" />
+            </p>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
